@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Mother's Day 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;700&family=Parisienne&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Cormorant Garamond', serif;
+
+    background:linear-gradient(-45deg,#f6eee3,#fdf6f0,#efe3d8,#f8f3ee);
+    background-size:400% 400%;
+    animation:bgMove 15s ease infinite;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* CARD */
+.card{
+    width:92%;
+    max-width:1150px;
+    min-height:620px;
+    background:rgba(255,255,255,0.18);
+    backdrop-filter:blur(15px);
+    border-radius:35px;
+    display:flex;
+    overflow:hidden;
+    box-shadow:0 10px 40px rgba(0,0,0,0.08);
+}
+
+.left{
+    width:45%;
+    background:url('yourpicture.jpg') center/cover no-repeat;
+}
+
+.right{
+    width:55%;
+    padding:70px 60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:left;
+}
+
+.right h1{
+    font-family:'Parisienne', cursive;
+    font-size:4.5rem;
+    color:#8b6f5c;
+    margin-bottom:20px;
+}
+
+.right p{
+    font-size:1.4rem;
+    line-height:2.2;
+    color:#5e4b3c;
+}
+
+/* HEART */
+.big-heart{
+    margin-top:25px;
+    font-size:65px;
+    animation:beat 1s infinite;
+}
+
+@keyframes beat{
+    0%,100%{transform:scale(1);}
+    50%{transform:scale(1.2);}
+}
+
+.signature{
+    margin-top:20px;
+    font-size:1.3rem;
+    color:#8b6f5c;
+    font-style:italic;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- 🎵 MUSIC -->
+<audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="card">
+
+    <div class="left"></div>
+
+    <div class="right">
+
+        <h1>Happy Mother’s Day 💐</h1>
+
+        <!-- UPDATED MESSAGE -->
+        <p>
+            Happy Mother’s Day, Ma 💖 <br><br>
+
+            Salamat sa lahat ng sakripisyo, pag-aalaga, at pagmamahal mo sa’kin.  
+            Kahit minsan hindi ako expressive, sobra kitang pinapahalagahan at mahal.  
+
+            Sorry kung may mga pagkakataon na di tayo nagkakaintindihan, pero tandaan mo na lagi kitang pinapahalagahan.  
+
+            Gagawin ko yung best ko sa lahat ng bagay para maproud ka sa’kin balang araw. 🤍
+        </p>
+
+        <div class="big-heart">❤️</div>
+
+        <div class="signature">
+            — Love, Carl 💖
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
